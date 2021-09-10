@@ -1,0 +1,27 @@
+{
+  "name": "gatekeeper",
+  "version": "1.0.0",
+  "description": "Buffers HTTPS requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
+  },
+  "keywords": [
+    "rate-limiting",
+    "http-requests"
+  ],
+  "author": "Ivan Frias",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.9.0",
+    "@types/uuid": "^8.3.1",
+    "typescript": "^4.4.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1"
+  }
+}
